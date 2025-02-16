@@ -20,7 +20,7 @@
     }
 }
 .child {
-    width: 50%;
+    max-width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -58,10 +58,11 @@
 }
 .montessrat{
     font-family: Montserrat;
-    font-weight: 300;
-    font-size: 42px;
+    font-weight: 700;
+    font-size: 64px;
     line-height: 72px;
     letter-spacing: 0%;
+    
     text-align: left;
 }
 .montessrat_small{
@@ -81,4 +82,11 @@ letter-spacing: 0%;
     background: #5BC8AF;
     color: white;
     text-align: center;
+}
+input{
+    background: none;
+    color: white;
+}
+input::placeholder{
+    color: white;
 }

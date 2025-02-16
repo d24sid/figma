@@ -14,10 +14,9 @@
             box-sizing: border-box;
         }
         header {
-            background: #2c3e50;
             color: white;
-            padding: 1rem;
             text-align: center;
+            width: 97%;
         }
         nav {
             display: flex;
@@ -46,8 +45,13 @@
         }
         .hero {
             background: #34495e;
-            color: white;
-            padding: 2rem;
+            background: url('mask.png') no-repeat center center;
+        background-size: cover;
+        color: white;
+        padding: 2rem;
+        width: 100%;
+        height: calc(75%);
+
         }
         .services, .about, .video {
             padding: 2rem;
@@ -94,21 +98,23 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">GET AN INTERVENTION</div>
-            <ul class="nav-links">
-                <li><a href="#about">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-            <button class="menu-toggle">☰</button>
-        </nav>
-    </header>
+    
     
     <section class="hero">
+        <header>
+            <nav>
+                <div class="logo">GET AN INTERVENTION</div>
+                <ul class="nav-links">
+                    <li><a href="#about">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#">CALL NOW FOR A CONSULT 123</a></li>
+                </ul>
+                <button class="menu-toggle">☰</button>
+            </nav>
+        </header>
         <div class="container">
-            <div class="child "><span class="montessrat">GET AN INTERVENTION</span><br>
+            <div class="child"><span class="montessrat">GET AN INTERVENTION</span><br>
             <span class="montessrat_small">Showing greater respect to older adults can be done in several ways : 
             acknowledging and putting to use the talents and skills of older adults; creating 
                 intergenerational initiatives; and allowing older adults to stay active and independent for as long as possible.
@@ -132,14 +138,12 @@
                 </section>
             </div>
         </div>
-<!--         
-        <p>Helping you every step of the way</p>
-        <button>Contact Us</button> -->
+
     </section>
     
     <section id="about" class="about">
         <h2>We Understand</h2>
-        <p>Information about the company and services.</p>
+        <p></p>
     </section>
     
     <section id="services" class="services">
@@ -157,7 +161,7 @@
     </section>
     
     <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <p>&copy; 2025 Siddharth. All rights reserved.</p>
     </footer>
     
     <script>
