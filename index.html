@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET AN INTERVENTION</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+        .hero {
+            background: #34495e;
+            color: white;
+            padding: 2rem;
+        }
+        .services, .about, .video {
+            padding: 2rem;
+            text-align: center;
+        }
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .service {
+            background: #ecf0f1;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .video button {
+            font-size: 2rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #2c3e50;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #2c3e50;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 50%;
+                text-align: center;
+                padding: 1rem;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GET AN INTERVENTION</div>
+            <ul class="nav-links">
+                <li><a href="#about">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="child "><span class="montessrat">GET AN INTERVENTION</span><br>
+            <span class="montessrat_small">Showing greater respect to older adults can be done in several ways : 
+            acknowledging and putting to use the talents and skills of older adults; creating 
+                intergenerational initiatives; and allowing older adults to stay active and independent for as long as possible.
+            </span></div>
+            <div class="child">
+                <section class="contact-form">
+                    <form>
+                        <div class="form-row">
+                            <input type="text" name="first-name" placeholder="First Name" required>
+                            <input type="text" name="last-name" placeholder="Last Name" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="text" name="company" placeholder="Company" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="country" placeholder="Country" required class="full-width">
+                        </div>
+                        <button type="submit" class="submitBtn">Submit</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+<!--         
+        <p>Helping you every step of the way</p>
+        <button>Contact Us</button> -->
+    </section>
+    
+    <section id="about" class="about">
+        <h2>We Understand</h2>
+        <p>Information about the company and services.</p>
+    </section>
+    
+    <section id="services" class="services">
+        <h2>We Can Organize Everything</h2>
+        <div class="service-list">
+            <div class="service">Health Assessment</div>
+            <div class="service">Insurance Advocacy</div>
+            <div class="service">Transportation & Logistics</div>
+        </div>
+    </section>
+    
+    <section class="video">
+        <h2>Watch the Video</h2>
+        <button class="play-button">▶</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
